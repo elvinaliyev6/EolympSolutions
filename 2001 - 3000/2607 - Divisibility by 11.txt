@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class eolymp {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        long n = scan.nextLong(), even = 0, odd = 0;
+        while (n > 0) {
+            long a = n % 10;
+            even+=a;
+            n /= 10;
+            a=n%10;
+            odd+=a;
+            n/=10;
+        }
+        System.out.println(odd*even);
+    }
+
+}
