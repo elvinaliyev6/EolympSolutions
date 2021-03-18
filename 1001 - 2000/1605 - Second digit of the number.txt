@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class eolymp {
+
+     public static void main(String[] args) {
+             Scanner scan=new Scanner(System.in);
+            long n=scan.nextLong();
+            int sec=0;
+        if(n<0) n*=-1;
+
+                while(n>9){
+                     sec=(int) n%10;
+                     n/=10;
+                       }   
+         
+
+
+         System.out.println(sec);
+
+}
+     
+}

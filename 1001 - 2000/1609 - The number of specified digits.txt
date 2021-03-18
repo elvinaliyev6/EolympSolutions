@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class eolymp {
+
+     public static void main(String[] args) {
+             Scanner scan=new Scanner(System.in);
+            long n=scan.nextLong();
+            int a=scan.nextInt();
+            int sum=0;
+        if(n<0) n*=-1;
+
+                while(n>0){
+                     if(a==n%10) sum++;
+                     n/=10;
+                       }   
+         
+
+
+         System.out.println(sum);
+
+}
+     
+}

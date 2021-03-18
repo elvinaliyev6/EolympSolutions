@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class EolympProblems {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long n = sc.nextLong();
+        long i = 2;
+        long a=2;
+        while (true) {
+            if (a< n) {
+                System.out.print(a+" ");
+                a*=2;
+            }
+            else{
+                    break;
+                    }
+        }
+    }
+
+}
