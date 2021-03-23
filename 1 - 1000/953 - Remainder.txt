@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+int a,birinci,sonuncu,s;
+cin>>a;
+birinci=a/100;
+sonuncu=a%10;
+s=sonuncu%birinci;
+cout<<s;
+}
