@@ -1,0 +1,105 @@
+import java.util. *;
+
+ 
+
+class Vector
+
+{
+
+  private int dx , dy ;
+
+ 
+
+  Vector ()
+
+  {
+
+    dx = dy = 0;
+
+  }
+
+ 
+
+  Vector ( int dx , int dy )
+
+  {
+
+    this . dx = dx ;
+
+    this . dy = dy ;
+
+  }
+
+ 
+
+  public double getLength ()
+
+  {
+
+    return Math. sqrt ( dx * dx + dy * dy );
+
+  }
+
+ 
+
+  public int Scalar (Vector v )
+
+  {
+
+    return v . dx * dx + v . dy * dy ;
+
+  }
+
+ 
+
+  public double GetAngle (Vector v )
+
+  {
+
+    int s = this .Scalar ( v );
+
+    return Math. acos ( s / this .getLength () / v .getLength ());
+
+  }
+
+};
+
+ 
+
+public class Main
+
+{
+
+  public static void main (String [] args )
+
+  {
+
+    Scanner con = new Scanner (System.in );
+
+    int a = con .nextInt ();
+
+    int b = con .nextInt ();
+
+    Vector u = new Vector ( a , b );
+
+   
+
+    a = con .nextInt ();
+
+    b = con .nextInt ();
+
+    Vector v = new Vector ( a , b );
+
+   
+
+    System. out .println ( u .Scalar ( v ));
+
+    System. out .println ( u .GetAngle ( v ));
+
+    con .close ();
+
+  }
+
+}
+
+ 

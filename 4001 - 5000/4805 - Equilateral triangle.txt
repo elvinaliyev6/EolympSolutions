@@ -1,0 +1,17 @@
+
+import static java.lang.Math.sqrt;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        double p=3*n;
+        double area=(sqrt(3)*n*n)/4;
+        
+        System.out.printf("%.4f %.4f",p,area);
+        
+    }
+    
+}

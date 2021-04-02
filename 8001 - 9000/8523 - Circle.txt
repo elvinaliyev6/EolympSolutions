@@ -1,0 +1,16 @@
+
+import static java.lang.Math.PI;
+import static java.lang.Math.sqrt;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double r=sc.nextDouble();
+        double circumference =PI*2*r;
+        double area=PI*r*r;
+        System.out.printf("%.4f %.4f",circumference,area);
+    }
+
+}
