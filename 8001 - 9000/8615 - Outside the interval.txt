@@ -1,0 +1,23 @@
+
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Elvin Aliyev
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long x = sc.nextLong(), a = sc.nextLong(), b = sc.nextLong();
+        String s="OUT";
+        for (long i = a; i <= b; i++) {
+            if(x==i){
+                s="IN";
+                break;
+            }
+        }
+        System.out.println(s);
+    }
+}
