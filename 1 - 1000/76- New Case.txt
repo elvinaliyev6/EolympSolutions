@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Elvin Aliyev
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt(), b = sc.nextInt();
+        int x = sc.nextInt(), y = sc.nextInt(), z = sc.nextInt();
+        if ((a > x && b > y) || (a > x && b > z) || (a > z && b > y)
+                || (a > y && b > x) || (a > z && b > x)
+                || (a > y && b > z)) {
+            System.out.println("1");
+        } else {
+            System.out.println("0");
+        }
+    }
+
+}

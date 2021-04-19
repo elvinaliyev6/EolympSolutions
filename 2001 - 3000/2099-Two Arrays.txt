@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Elvin Aliyev
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+       int n=sc.nextInt();
+       int[] arr=new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i]=sc.nextInt();
+        }
+        int count=0;
+        int n2=sc.nextInt();
+        int[] arr2=new int[n2];
+        
+        for (int i = 0; i < n2; i++) {
+            arr2[i]=sc.nextInt();
+        }
+        boolean b=true;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n2; j++) {
+                if(arr[i]==arr2[j]){
+                    b=false;
+                }
+            }
+            if(b==true){
+                arr[count]=arr[i];
+                count++;
+            }
+            b=true;
+        }
+        int[] arr3=new int[count];
+        System.out.println(count);
+        for (int i = 0; i < count; i++) {
+            System.out.print(arr[i]+" ");
+        }
+        
+    }
+
+}
